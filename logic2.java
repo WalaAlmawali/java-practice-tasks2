@@ -46,8 +46,13 @@ public class logic2 {
         System.out.println(ex11.fizzString2(3));*/
 
         // task 12
-        logic2 ex12= new logic2();
-        System.out.println(ex12.inOrderEqual(5,5,7,true));
+        /*logic2 ex12= new logic2();
+        System.out.println(ex12.inOrderEqual(5,5,7,true));*/
+
+        // task 13
+        logic2 ex13= new logic2();
+        System.out.println(ex13.withoutDoubles(3,3,false));
+
     }
 
     public String fizzString(String str){
@@ -174,5 +179,22 @@ public class logic2 {
             return true;
         }
         return false;
+    }
+
+    public int withoutDoubles(int die1, int die2, boolean noDoubles){
+        if(noDoubles == false){
+            return die1 + die2;
+        } else if (noDoubles == true) {
+            if( die1 != die2){
+                return die1 + die2;
+            }else {
+                die1++;
+                if(die1> 6){
+                    die1 = 1;
+                }
+                return die1 + die2;
+            }
+        }
+        return die1 + die2;
     }
 }
