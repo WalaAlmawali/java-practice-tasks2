@@ -29,8 +29,12 @@ public class logic1 {
         System.out.println(ex7.twoAsOne(3,2,2));*/
 
         // task 8
-        logic1 ex8= new logic1();
-        System.out.println(ex8.lastDigit(23,19,3));
+        /*logic1 ex8= new logic1();
+        System.out.println(ex8.lastDigit(23,19,3));*/
+
+        // task 9
+        logic1 ex9= new logic1();
+        System.out.println(ex9.maxMod5(3,2));
 
     }
 public boolean cigarParty(int cigars, boolean isWeekend){
@@ -118,6 +122,16 @@ public boolean cigarParty(int cigars, boolean isWeekend){
             return true;
         }else {
             return false;
+        }
+    }
+
+    public int maxMod5(int a, int b){
+        if(a==b){
+            return 0;
+        } else if (a % 5 == b % 5) {
+            return Math.min(a,b);
+        }else {
+            return Math.max(a,b);
         }
     }
 
