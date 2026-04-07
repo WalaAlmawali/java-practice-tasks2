@@ -34,8 +34,12 @@ public class logic2 {
         System.out.println(ex8.specialEleven(24));*/
 
         // task 9
-        logic2 ex9= new logic2();
-        System.out.println(ex9.less20(20));
+        /*logic2 ex9= new logic2();
+        System.out.println(ex9.less20(20));*/
+
+        // task 10
+        logic2 ex10= new logic2();
+        System.out.println(ex10.answerCell(true, false, false));
 
     }
 
@@ -125,6 +129,20 @@ public class logic2 {
     }
     public boolean less20(int n){
         if(n % 20 == 18 || n % 20 == 19){
+            return true;
+        }
+        return false;
+    }
+
+    public boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep){
+        if(isAsleep == true){
+            return false;
+        }
+        if (isMorning == true) {
+            if( isMom == true){
+                return true;
+            }
+        } else if (isMorning == false) {
             return true;
         }
         return false;
