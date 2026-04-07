@@ -18,8 +18,14 @@ public class logic2 {
         System.out.println(ex4.redTicket(0,0,0));*/
 
         // task 5
-        logic2 ex5 = new logic2();
-        System.out.println(ex5.shareDigit(12,44));
+       /* logic2 ex5 = new logic2();
+        System.out.println(ex5.shareDigit(12,44));*/
+
+        // task 6
+        logic2 ex6 = new logic2();
+        System.out.println(ex6.squirrelPlay(95,true));
+
+
     }
 
     public String fizzString(String str){
@@ -71,6 +77,19 @@ public class logic2 {
 
         if((aLeft == bLeft) || (aLeft == bRight) || (aRight == bLeft) || (aRight == bRight)){
             return true;
+        }
+        return false;
+    }
+
+    public boolean squirrelPlay(int temp, boolean isSummer){
+        if(isSummer == false){
+            if(temp >= 60 && temp <= 90){
+                return true;
+            }
+        } else if (isSummer == true) {
+            if(temp >= 60 && temp <= 100){
+                return  true;
+            }
         }
         return false;
     }
