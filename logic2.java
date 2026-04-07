@@ -10,8 +10,13 @@ public class logic2 {
         System.out.println(ex2.inOrder(1,1,2,true));*/
 
         // task 3
-        logic2 ex3 = new logic2();
-        System.out.println(ex3.lessBy10(11,1,7));
+       /* logic2 ex3 = new logic2();
+        System.out.println(ex3.lessBy10(11,1,7));*/
+
+        // task 4
+        logic2 ex4 = new logic2();
+        System.out.println(ex4.redTicket(0,0,0));
+
     }
 
     public String fizzString(String str){
@@ -43,5 +48,16 @@ public class logic2 {
             return true;
         }
         return false;
+    }
+
+    public int redTicket(int a, int b, int c){
+        if( a == 2 && b == 2 && c == 2){
+            return 10;
+        } else if (a == b && a == c) {
+            return 5;
+        } else if (b == c && b != a) {
+            return 1;
+        }
+        return 0;
     }
 }
