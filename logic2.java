@@ -22,13 +22,16 @@ public class logic2 {
         System.out.println(ex5.shareDigit(12,44));*/
 
         // task 6
-//        logic2 ex6 = new logic2();
+//   logic2 ex6 = new logic2();
 //        System.out.println(ex6.squirrelPlay(95,true));
 
         // task 7
-        logic2 ex7 = new logic2();
-        System.out.println(ex7.alarmClock(0,false));
+       /* logic2 ex7 = new logic2();
+        System.out.println(ex7.alarmClock(0,false));*/
 
+        // task 8
+        logic2 ex8= new logic2();
+        System.out.println(ex8.specialEleven(24));
 
     }
 
@@ -110,4 +113,11 @@ public class logic2 {
             return "10:00";
         }
     }
+    public boolean specialEleven(int n){
+        if(n % 11 == 0 || n % 11 == 1){
+            return true;
+        }
+        return false;
+    }
+
 }
