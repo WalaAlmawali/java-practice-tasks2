@@ -42,8 +42,12 @@ public class logic2 {
         System.out.println(ex10.answerCell(true, false, false));*/
 
         // task 11
-        logic2 ex11= new logic2();
-        System.out.println(ex11.fizzString2(3));
+       /* logic2 ex11= new logic2();
+        System.out.println(ex11.fizzString2(3));*/
+
+        // task 12
+        logic2 ex12= new logic2();
+        System.out.println(ex12.inOrderEqual(5,5,7,true));
     }
 
     public String fizzString(String str){
@@ -160,5 +164,15 @@ public class logic2 {
             return "Buzz!";
         }
         return n + "!";
+    }
+    public boolean inOrderEqual(int a, int b, int c, boolean equalOk){
+        if(equalOk == false){
+            if (a < b && b < c){
+                return true;
+            }
+        }else if (a <= b && b <= c){
+            return true;
+        }
+        return false;
     }
 }
